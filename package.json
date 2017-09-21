@@ -1,0 +1,24 @@
+{
+  "name": "com.meteor.cordova-update",
+  "version": "1.0.0",
+  "author": "Rocket.Chat",
+  "license": "MIT",
+  "homepage": "https://github.com/RocketChat/com.meteor.cordova-update",
+  "description": "Meteor Cordova Update",
+  "cordova": {
+    "id": "com.meteor.cordova-update",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RocketChat/com.meteor.cordova-update"
+  },
+  "keywords": [
+    "cordova",
+    "cordova-android",
+    "cordova-ios"
+  ]
+}
