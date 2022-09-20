@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "author": "Rocket.Chat",
   "license": "MIT",
-  "homepage": "https://github.com/RocketChat/com.meteor.cordova-update",
+  "homepage": "https://github.com/steedos/com.meteor.cordova-update",
   "description": "Meteor Cordova Update",
   "cordova": {
     "id": "com.meteor.cordova-update",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RocketChat/com.meteor.cordova-update"
+    "url": "https://github.com/steedos/com.meteor.cordova-update"
   },
   "keywords": [
     "cordova",
