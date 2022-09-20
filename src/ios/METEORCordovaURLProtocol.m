@@ -50,9 +50,8 @@ NSDictionary *MimeTypeMappings = nil;
       if([urlPath hasPrefix:@"/"]){
           urlPath = [urlPath substringFromIndex:1];
       }
-      path = [urlPath
-                      stringByAddingPercentEncodingWithAllowedCharacters:
-      [NSCharacterSet URLHostAllowedCharacterSet]];
+      
+      path = urlPath;
 
       filePath = [self filePathForURI:path allowDirectory:NO];
   }
