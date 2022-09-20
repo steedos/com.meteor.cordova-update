@@ -45,6 +45,18 @@ NSDictionary *MimeTypeMappings = nil;
     filePath = [self filePathForURI:[@"/app" stringByAppendingPathComponent:path] allowDirectory:NO];
   }
 
+  if (!filePath || ![[NSFileManager defaultManager] fileExistsAtPath:filePath isDirectory:NULL]) {
+      NSString *urlPath = self.request.URL.path;
+      if([urlPath hasPrefix:@"/"]){
+          urlPath = [urlPath substringFromIndex:1];
+      }
+      path = [urlPath
+                      stringByAddingPercentEncodingWithAllowedCharacters:
+      [NSCharacterSet URLHostAllowedCharacterSet]];
+
+      filePath = [self filePathForURI:path allowDirectory:NO];
+  }
+
   BOOL isDir = NO;
 
   // XXX HACKHACK if the file not found, return the root page
